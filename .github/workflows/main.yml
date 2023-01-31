@@ -10,6 +10,20 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Execute build
-        run: echo Greet from build
+        run: echo Build successfully
+        
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Execute Test
+        run: echo Test done successfully
+        
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Execute Deploy
+        run: echo deployed successfully
   
     
